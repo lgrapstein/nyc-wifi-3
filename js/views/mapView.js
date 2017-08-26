@@ -14,7 +14,7 @@ class MapView {
     });
 
     infowindow = new google.maps.InfoWindow({
-      content: "<h2 id='where-im-at'>THIS IS WHERE YOU AT</h2>"
+      content: "<h2 id='where-im-at'>YOU ARE HERE</h2>"
     });
 
     marker = new google.maps.Marker({
