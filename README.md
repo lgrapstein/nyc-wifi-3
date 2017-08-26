@@ -4,3 +4,5 @@ Find all of the free wi-fi hotspots around you in New York City. Like a specific
 
 Run app via:
   ruby -run -e httpd . -p 8000
+
+http://localhost:8000/home.html
