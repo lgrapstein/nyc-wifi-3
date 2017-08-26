@@ -1,17 +1,25 @@
+@keyframes pretty-colors {
+  0%   {color:red;}
+  25%  {color:yellow;}
+  50%  {color:blue;}
+  75%  {color:green;}
+  100% {color:red;}
+}
+
+@keyframes red-lenses {
+  0%  {color:black;}
+  50% {color:#6882A3;}
+}
+
+body {
+  text-align: center;
+  font-family: 'Share Tech', sans-serif;
+  background-color: rgb(163,204,255);
+  font-size: 17px;
+}
+
 /* Desktop */
 @media screen and (min-width: 980px)  {
-  @keyframes red-lenses {
-    0%  {color:black;}
-    50% {color:#6882A3;}
-  }
-
-  /* Desktop */
-  body {
-    text-align: center;
-    font-family: 'Share Tech', sans-serif;
-    background-color: rgb(163,204,255);
-  }
-
   /* Desktop */
   img {
     height: 140px;
@@ -22,7 +30,6 @@
   #map {
     height: calc(100vh - 265px);
     width: 100%;
-    border-radius: 2px;
   }
 
   /* Desktop */
@@ -116,16 +123,10 @@
 
 /* Tablet */
 @media screen and (max-width: 979px) {
-  @keyframes red-lenses {
-    0%  {color:black;}
-    50% {color:red;}
-  }
-
   /* Tablet */
-  body {
-    text-align: center;
-    font-family: 'Share Tech', sans-serif;
-    background-color: rgb(163,204,255);
+  img {
+    height: 120px;
+    width: 120px;
   }
 
   /* Tablet */
@@ -144,8 +145,9 @@
 
   /* Tablet */
   #loading {
+    margin-top: 10px;
     text-align: center;
-    font-size: 60pt;
+    font-size: 50pt;
     animation-name: red-lenses;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -160,7 +162,14 @@
 
   /* Tablet */
   #distance {
-    width: 40px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: rgb(163,204,255);
+  }
+
+  /* Tablet */
+  select#measure {
+    background-color: rgb(163,204,255);
   }
 
 
@@ -217,23 +226,15 @@
 
 /* Mobile */
 @media screen and (max-width: 500px) {
-  @keyframes red-lenses {
-    0%  {color:black;}
-    50% {color:red;}
-  }
-
   /* Mobile */
   body {
-    text-align: center;
-    font-family: 'Share Tech', sans-serif;
-    background-color: rgb(163,204,255);
     font-size: 11pt;
   }
 
   /* Mobile */
   img {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
   }
 
   /* Mobile */
@@ -252,6 +253,7 @@
 
   /* Mobile */
   #loading {
+    margin-top: 10px;
     text-align: center;
     font-size: 40pt;
     animation-name: red-lenses;
@@ -268,7 +270,14 @@
 
   /* Mobile */
   #distance {
-    width: 40px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: rgb(163,204,255);
+  }
+
+  /* Mobile */
+  select#measure {
+    background-color: rgb(163,204,255);
   }
 
 
@@ -288,9 +297,9 @@
     font-family: "Lucida Grande", Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    height: 60px;
+    height: 50px;
     letter-spacing: -1px;
-    line-height: 30px;
+    line-height: 50px;
     margin: 20px 0 10px;
     position: relative;
     text-align: center;
